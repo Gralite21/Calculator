@@ -5,7 +5,7 @@
 </head>
 
 <body>
-<button onclick="updateCalculation('1');">1</button>
+<button onclick="updateCalculation('1');">1</button>                     <!--function with string/input -->
 <button onclick="updateCalculation('2');">2</button>
 <button onclick="updateCalculation('3');">3</button>
 <button onclick="updateCalculation('+');">+</button>
@@ -28,14 +28,14 @@
   <button onclick="calculation = eval(calculation); console.log(calculation);">=</button>
 </p>
 <p>
-  <button onclick="calculation = '' ;console.log(calculation);">RESET</button>
+  <button onclick="calculation = '' ;console.log(calculation);">RESET</button>            <!-- Reset calculation by removing values-->
 </p>
 
 
 <script>
   let calculation = '';
 
-  function updateCalculation (input){
+  function updateCalculation (input){         // function with Parameter(Which displays the strings) input to organize Code
    calculation+=input;
    console.log(calculation);
   }

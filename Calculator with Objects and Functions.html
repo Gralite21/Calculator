@@ -25,25 +25,24 @@
   <button onclick="updateCalculation('0');">0</button>
   <button onclick="updateCalculation('.');">.</button>
   <button onclick="updateCalculation('*');">*</button>
-  <button onclick="calculation = eval(calculation); console.log(calculation);localStorage.setItem('calculation',calculation);">=</button>
+  <button onclick="calculation = eval(calculation); console.log(calculation);localStorage.setItem('calculation',calculation);">=</button>      <!--The final result will be stored -->
 </p>
 <p>
-  <button onclick="calculation = '' ;console.log(calculation);localStorage.setItem('calculation',calculation);">RESET</button>
+  <button onclick="calculation = '' ;console.log(calculation);localStorage.setItem('calculation',calculation);">RESET</button>         <!--The calculation reset and save(that theres no value-->
 </p>
 
 
 <script>
 
-  let calculation = localStorage.getItem('calculation') || '';
+  let calculation = localStorage.getItem('calculation') || '';                 //The LAST result will be used in the following
 
   function updateCalculation (input){
     calculation+=input;
     console.log(calculation);
-    localStorage.setItem('calculation',calculation);
+    localStorage.setItem('calculation',calculation);                          // local storage saves calculation
   }
 
-/*function saveCalculation() {
-        localStorage.setItem('calculation', calculation);*/
+  console.log(localStorage.getItem('calculation'))             // shows the LAST result/input
 
 
 </script>
