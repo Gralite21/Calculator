@@ -13,66 +13,63 @@
         </p>
     </div>
     <div class="row">
-        <button class="numberButton" onclick="updateCalculation('1');">
+        <button class="numberButton button" onclick="updateCalculation('1');">
             1
         </button>
-        <button class="numberButton" onclick="updateCalculation('2');">
+        <button class="numberButton button" onclick="updateCalculation('2');">
             2
         </button>
-        <button class="numberButton" onclick="updateCalculation('3');">
+        <button class="numberButton button" onclick="updateCalculation('3');">
             3
         </button>
-        <button class="mathButton" onclick="updateCalculation('+');">
+        <button class="mathButton button" onclick="updateCalculation('+');">
             +
         </button>
     </div>
     <div class="row">
-        <button class="numberButton" onclick="updateCalculation('4');">
+        <button class="numberButton button" onclick="updateCalculation('4');">
             4
         </button>
-        <button class="numberButton" onclick="updateCalculation('5');">
+        <button class="numberButton button" onclick="updateCalculation('5');">
             5
         </button>
-        <button class="numberButton" onclick="updateCalculation('6');">
+        <button class="numberButton button" onclick="updateCalculation('6');">
             6
         </button>
-        <button class="mathButton" onclick="updateCalculation('-');">
+        <button class="mathButton button" onclick="updateCalculation('-');">
             -
         </button>
     </div>
     <div class="row">
-        <button class="numberButton" onclick="updateCalculation('7');">
-            7</button>
-        <button class="numberButton" onclick="updateCalculation('8');">
-            8</button>
-        <button class="numberButton" onclick="updateCalculation('9');">
-            9</button>
-        <button class="mathButton" onclick="updateCalculation('/');">
+        <button class="numberButton button" onclick="updateCalculation('7');">
+            7
+        </button>
+        <button class="numberButton button" onclick="updateCalculation('8');">
+            8
+        </button>
+        <button class="numberButton button" onclick="updateCalculation('9');">
+            9
+        </button>
+        <button class="mathButton button" onclick="updateCalculation('/');">
             &#x00F7;
         </button>
     </div>
     <div class="row">
-        <button class="numberButton0" onclick="updateCalculation('0');">
+        <button class="numberButton0 button" onclick="updateCalculation('0');">
             0
         </button>
-        <button class="numberButton" onclick="updateCalculation('.');">
+        <button class="numberButton button" onclick="updateCalculation('.');">
             ,
         </button>
-        <button class="mathButton " onclick="updateCalculation('*');">
+        <button class="mathButton  button" onclick="updateCalculation('*');">
             &#x00D7;
         </button>
     </div>
     <div class="row">
-        <button class="clearButton" onclick="calculation = '' ;
-          displayCalculation();
-          localStorage.setItem('calculation',calculation);"
-        >
+        <button class="clearButton button" onclick="clearButton();">
             AC
         </button>
-        <button class="evalButton" onclick="calculation = eval(calculation);
-          displayCalculation() ;
-          localStorage.setItem('calculation',calculation);"
-        >
+        <button class="evalButton button" onclick="evalButton();">
             =
         </button>
     </div>
