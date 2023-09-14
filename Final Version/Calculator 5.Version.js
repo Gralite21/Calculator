@@ -1,7 +1,4 @@
 let calculation = localStorage.getItem('calculation') || '';
-
-displayCalculation();
-
 function updateCalculation (input){
     calculation+=input;
     displayCalculation();

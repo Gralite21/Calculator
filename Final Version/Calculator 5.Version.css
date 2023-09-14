@@ -1,0 +1,55 @@
+body{
+    background-color: black;
+}
+.displayMath{
+    color: white;
+    font-size: 80px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.display{
+    height: 135px;
+}
+.screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.row{
+    margin-bottom: 10px;
+}
+.numberButton,
+.mathButton,
+.clearButton,
+.numberButton0,
+.evalButton{
+    border: none;
+    background-color: rgb(80,80,80);
+    color: white;
+    font-size: 40px;
+    margin-right: 5px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px ;
+    cursor: pointer;
+}
+.mathButton{
+    background-color: rgb(255,165,0);
+}
+.clearButton{
+    font-size: 34px;
+    width: 200px;
+}
+.numberButton0{
+    width: 200px;
+}
+.evalButton{
+    background-color:rgb(255,165,0);
+    width: 200px;
+}
+.button:active{
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+}
